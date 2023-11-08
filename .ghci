@@ -1,0 +1,17 @@
+:set -Wall
+:set -isrc
+
+
+:seti -Wno-type-defaults
+
+:seti -XOverloadedStrings -XQuasiQuotes -XRecordWildCards -XOverloadedLists -XTemplateHaskell
+
+:seti -XTypeApplications -XKindSignatures -XFlexibleContexts
+
+:set -fprint-explicit-foralls
+:set +m
+
+-- green bold lambdas and multiline mode
+:set prompt      "%s \ESC[1;32mλ: \ESC[m"
+:set prompt-cont "\ESC[1;32mλ| \ESC[m"
+
